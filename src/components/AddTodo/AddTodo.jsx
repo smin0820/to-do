@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { v4 as uuid4 } from 'uuid';
 
 export default function AddTodo({ onAdd }) {
     const [text, setText] = useState('');
@@ -9,7 +10,7 @@ export default function AddTodo({ onAdd }) {
         // 페이지가 리프레쉬 금지
         event.preventDefault();
         // 새로 submit된 todo
-        onAdd({ id: '125', text, status: 'active' });
+        onAdd({ id: uuid4(), text, status: 'active' });
         // 입력칸 초기화
         setText('');
         // todo에 빈칸이 포함 제거
