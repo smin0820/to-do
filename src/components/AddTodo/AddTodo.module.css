@@ -1,0 +1,38 @@
+.form {
+    background-color: var(--color-bg-dark);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: var(--color-bg-dark);
+}
+
+
+.input::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+.input:focus {
+    color: white;
+    font-weight: 600;
+}
+
+.button {
+    background-color: transparent;
+    font-size: xx-large;
+    color: white;
+    cursor: pointer;
+    transition: all 150ms ease-in;
+    margin-left: 10px;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
