@@ -1,5 +1,5 @@
 :root {
-  --color-bg-dark: #ffffff;
+  --color-bg-dark: #c77bf9;
   --color-bg: #dbddff;
   --color-grey: #d1d1d1;
   --color-text: #22243b;
@@ -22,11 +22,10 @@ body {
 }
 
 #root {
-  background-color: var(--color-bg-dark);
-  padding: 30px;
+  background-color: white;
   width: 100%;
   height: 50%;
-  max-width: 350px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -39,4 +38,9 @@ code {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+button {
+  outline: none;
+  border: none;
 }
