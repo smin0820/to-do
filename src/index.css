@@ -7,6 +7,11 @@
   --color-scrollbar: #dbddff;
 }
 
+html.dark {
+  --color-bg-dark: #22243b;
+  --color-grey: #999;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

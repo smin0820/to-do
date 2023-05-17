@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-bg-dark);
+    padding: 0 1rem;
 }
 
 .filters {
@@ -23,4 +24,15 @@
 .filter:hover,
 .filter.selected {
     opacity: 1;
+}
+
+.toggle {
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: white;
+    transition: all 150ms ease-in;
+}
+
+.toggle:hover {
+    transform: scale(1.2);
 }

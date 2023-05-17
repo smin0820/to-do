@@ -7,10 +7,6 @@ export default function Header({ filters, filter, onFilterChange }) {
   const {darkMode, toggleDarkMode} = useDarkMode();
   return (
     <header className={styles.header}>
-      <button onClick={toggleDarkMode}>
-        {!darkMode && <HiMoon />}
-        {darkMode && <HiSun />}
-      </button>
       <ul className={styles.filters}>
         {filters.map((value, index) => (
           <li key={index}>
@@ -18,6 +14,10 @@ export default function Header({ filters, filter, onFilterChange }) {
           </li>
         ))}
       </ul>
+      <button onClick={toggleDarkMode} className={styles.toggle}>
+        {!darkMode && <HiMoon />}
+        {darkMode && <HiSun />}
+      </button>
     </header>
   );
 }
